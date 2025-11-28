@@ -1,0 +1,12 @@
+name: demo 2
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: unbutu-latest
+        steps:
+            - run: uptime
+            - run: whoami
