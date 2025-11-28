@@ -32,7 +32,6 @@ jobs:
 
     deploy_job:
         needs: 
-         - setup_job
          - build_job
         runs-on: macos-latest
         steps:
