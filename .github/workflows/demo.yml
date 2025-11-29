@@ -21,12 +21,11 @@ jobs:
                 touch github-action.txt
                 ls -altr
                 echo Hello World
-                display readme file
                 cat README.md
            
     build_job:
         needs: setup_job
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         steps:
             - name: dispaly Hello
               run: echo Hello
